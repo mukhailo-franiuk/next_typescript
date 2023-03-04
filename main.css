@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.left_block form {
+    width: 90%;
+}
+.left_block h3 {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #363434;
+    padding: 10px 0;
+}
+#login,#pass,#email {
+    width: 90%;
+    height: 40px;
+    margin: 10px 0;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #363434;
+}
+#login:focus,#pass:focus,#email:focus{
+    border: 2px solid #08cdf0;
+}
+.add_btn,.add_btn_02 {
+    width: 30%;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid #49be49;
+    border-radius: 5px;
+    background: none;
+    color: #49be49;
+    font-family: sans-serif;
+    transition: background .7s linear;
+}
+.left_block .add_btn:hover {
+    color: #fff;
+    background: #49be49;
+}
+.right_block {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.table_users {
+    width: 95%;
+
+  margin: 0 auto;
+
+}
+.info_users  {
+    padding-top: 25px;
+
+    border-inline-end-width: 4px;
+}
+.info_users {
+    width: 95%;
+    margin: 10px auto;
+    border: 1px solid red;
+}
+.info_users td {
+    text-align: center;
+    padding: 5px 0;
+}
+.edit_btn,.delete_btn {
+    padding: 5px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.edit_btn {
+    background-color: orange;
+}
+.delete_btn {
+    background-color:#d82607;
+    color: white;
+}
+hr {
+    color: #49be49;
+}
+.closest {
+    display: none;
+}

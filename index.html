@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Home work</title>
+    <style>
+        #some > p {
+            width: 20%;
+            background-color: brown;
+            color: aliceblue;
+            padding: 10px 20px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left_block">
+            <form name="inform">
+                <h3>Login</h3>
+                <input type="text" placeholder="Login" id="login">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password" id="pass">
+                <h3>Email</h3>
+                <input type="text" placeholder="Email" id="email">
+                <p><input type="button" value="Add user" name="btn" class="add_btn"></p>
+            </form>
+        </div>
+        <div class="right_block">
+            <table class="table_users">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Login</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                </thead>
+                <tbody class="info_users">
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <div id="some"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
